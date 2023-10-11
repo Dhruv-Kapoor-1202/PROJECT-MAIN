@@ -1,0 +1,32 @@
+POST http://localhost:8000/api/createFaculty
+Content-Type: application/json
+
+{
+  "fname": "Vedant",
+  "lname": "Kapoor",
+  "email": "v@gmail.com",
+  "password":"123"
+}
+
+###
+
+GET http://localhost:8000/api/getAllFaculty 
+
+
+###
+
+GET http://localhost:8000/api/getOneFaculty/6524fe3ca327efa4c42bedf2 
+
+###
+
+PUT http://localhost:8000/api/updateFaculty/6524fe3ca327efa4c42bedf2
+Content-Type: application/json
+
+{
+  "fname": "Random",
+  "email": "pqr@gmail.com"
+}
+
+### 
+
+DELETE http://localhost:8000/api/deleteFaculty/6524fe3ca327efa4c42bedf2 

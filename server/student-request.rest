@@ -1,0 +1,32 @@
+POST http://localhost:8000/api/createStudent
+Content-Type: application/json
+
+{
+  "fname": "Siddhant",
+  "lname": "Kapoor",
+  "email": "s@gmail.com",
+  "password":"123"
+}
+
+###
+
+GET http://localhost:8000/api/getAllStudents 
+
+
+###
+
+GET http://localhost:8000/api/getOneStudent/6524fb350a06bc86e57d923c 
+
+###
+
+PUT http://localhost:8000/api/updateStudent/6524fb350a06bc86e57d923c
+Content-Type: application/json
+
+{
+  "fname": "Random",
+  "email": "pqr@gmail.com"
+}
+
+### 
+
+DELETE http://localhost:8000/api/deleteStudent/6524fb350a06bc86e57d923c 

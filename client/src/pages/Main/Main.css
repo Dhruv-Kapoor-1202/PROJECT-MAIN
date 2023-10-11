@@ -1,0 +1,11 @@
+.main {
+  flex-grow: 5;
+  /* background-color: rgb(197, 215, 95); */
+
+  display: flex;
+  width: 100%;
+}
+
+.main>* {
+  flex: 1;
+}

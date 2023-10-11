@@ -1,0 +1,17 @@
+.topbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.625em;
+
+  /* flex: 1; */
+}
+
+.topbar>* {
+  flex: 1;
+  /* height: 1em; */
+  background-color: var(--primary);
+
+
+}

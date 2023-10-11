@@ -1,0 +1,38 @@
+.dash {
+  flex: 1;
+  display: flex;
+
+  width: 100%;
+
+  gap: 0.625em;
+}
+
+.dash .dash-left {
+  flex: 1;
+  background-color: var(--primary);
+  border-radius: 33px 0 0 33px;
+
+}
+
+.dash .dash-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.625em;
+
+}
+
+
+.dash .dash-right .dash-box {
+  background-color: var(--primary);
+  flex: 1;
+}
+
+.dash-box-top {
+  border-radius: 0 33px 0 0;
+}
+
+.dash-box-bottom {
+  border-radius: 0 0 33px 0;
+}
