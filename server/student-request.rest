@@ -12,6 +12,10 @@ Content-Type: application/json
 
 GET http://localhost:8000/api/getAllStudents 
 
+###
+
+GET http://localhost:8000/api/getAllStudentsCount 
+
 
 ###
 

@@ -1,0 +1,30 @@
+POST http://localhost:8000/api/addStudentDetails
+Content-Type: application/json
+
+{
+  "rollnumber": 1,
+  "fname" : "Dhruv",
+  "lname" : "Kapoor",
+  "email" : "dk@gmail.com",
+  "phoneNumber" : 123123123,
+  "semester" : 5,
+  "branch" : "CSE",
+  "gender" : "male"
+}
+
+
+###
+GET http://localhost:8000/api/getOneStudentDetails/65397dc27fb1a736d67762bf
+
+
+### 
+PUT http://localhost:8000/api/updateOneStudentDetails/65397dc27fb1a736d67762bf
+Content-Type: application/json
+
+{
+  "fname" : "Random",
+  "email" : "pqrst@gmail.com"
+}
+
+###
+DELETE http://localhost:8000/api/deleteOneStudentDetails/65397dc27fb1a736d67762bf

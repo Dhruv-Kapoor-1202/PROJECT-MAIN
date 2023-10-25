@@ -30,7 +30,7 @@ const Student = () => {
 
   return (
     <div className="studentTable">
-      <Link to="/studentInfo/add">Add Student</Link>
+      <Link className="a" to="/studentInfo/add">Add Student</Link>
 
       <table border={1} cellPadding={10} cellSpacing={0}>
         <thead>
@@ -47,7 +47,7 @@ const Student = () => {
               return (
                 <tr key={student._id}>
                   <td align="center">{index + 1}</td>
-                  <td>{student.fname} {student.lname}</td>
+                  <td><Link to={`/studentInfo/view/$student._id`}>{student.fname} {student.lname}</Link></td>
                   <td>{student.email}</td>
                   <td className="actionButtons">
                     <button onClick={() => deleteStudent(student._id)}>Delete</button>

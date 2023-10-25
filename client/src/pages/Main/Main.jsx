@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Student from "../Student-Info/getStudent/Student.jsx"
 import AddStudent from "../Student-Info/addStudent/Add.jsx";
 import EditStudent from "../Student-Info/updateStudent/Edit.jsx";
+import ViewStudent from "../Student-Info/viewStudent/View.jsx";
 
 import Faculty from "../Faculty-Info/getFaculty/Faculty.jsx";
 import AddFaculty from "../Faculty-Info/addFaculty/Add.jsx";
@@ -28,6 +29,7 @@ const Main = () => {
         <Route path="/studentInfo" element={<Student />} />
         <Route path="/studentInfo/add" element={<AddStudent />} />
         <Route path="/studentInfo/edit/:id" element={<EditStudent />} />
+        <Route path="/studentInfo/view/:id" element={<ViewStudent />} />
 
         <Route path="/facultyInfo" element={<Faculty />} />
         <Route path="/facultyInfo/add" element={<AddFaculty />} />

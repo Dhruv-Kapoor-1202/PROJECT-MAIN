@@ -31,6 +31,16 @@ export const getAllFaculty = async (req, res) => {
 }
 
 
+export const getAllFacultyCount = async (req, res) => {
+  try {
+    const facultyCount = await Faculty.countDocuments();
+    res.status(200).json(facultyCount);
+  } catch {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+}
+
+
 export const getOneFaculty = async (req, res) => {
   try {
     const id = req.params.id;

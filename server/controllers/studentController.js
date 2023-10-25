@@ -31,6 +31,16 @@ export const getAllStudents = async (req, res) => {
 }
 
 
+export const getAllStudentsCount = async (req, res) => {
+  try {
+    const studentCount = await Student.countDocuments();
+    res.status(200).json(studentCount);
+  } catch {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+}
+
+
 export const getOneStudent = async (req, res) => {
   try {
     const id = req.params.id;
