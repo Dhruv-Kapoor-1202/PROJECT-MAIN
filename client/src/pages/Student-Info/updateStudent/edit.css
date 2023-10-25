@@ -1,4 +1,4 @@
-.addUser {
+.addStudent {
   display: flex;
   flex-direction: column;
 
@@ -9,7 +9,7 @@
   /* align-items: center; */
 }
 
-.addUser a {
+.addStudent a {
   width: fit-content;
   text-decoration: none;
 
@@ -21,17 +21,17 @@
   font-weight: 500;
 }
 
-.addUser a:hover,
-.addUser a:focus {
+.addStudent a:hover,
+.addStudent a:focus {
   background-color: var(--primary-2);
   transition: 150ms ease-in-out;
 }
 
-.addUser a:active {
+.addStudent a:active {
   background-color: var(--primary);
 }
 
-.addUser .addUserForm {
+.addStudent .addStudentForm {
   /* width: 50%; */
   display: flex;
   flex-direction: column;
@@ -39,34 +39,34 @@
   /* gap: 1em; */
 }
 
-.addUser .addUserForm .addUserFormNames {
+.addStudent .addStudentForm .addStudentFormNames {
   display: flex;
   gap: 0.625em;
 
   flex-wrap: wrap;
 }
 
-.addUser .addUserForm .addUserFormNames>* {
+.addStudent .addStudentForm .addStudentFormNames>* {
   flex: 1;
 }
 
-.addUser .addUserForm .inputGroup {
+.addStudent .addStudentForm .inputGroup {
   display: flex;
   flex-direction: column;
   /* width: inherit; */
   gap: 0.5em;
 }
 
-.addUser .addUserForm .inputGroup input {
+.addStudent .addStudentForm .inputGroup input {
   padding: 0.625em 1em;
   font-size: inherit;
 }
 
-.addUser .addUserForm .inputGroup label {
+.addStudent .addStudentForm .inputGroup label {
   color: var(--text-dark);
 }
 
-.addUser .addUserForm button {
+.addStudent .addStudentForm button {
   width: fit-content;
   align-self: center;
   padding: 0.625em 1.5em;
@@ -89,16 +89,16 @@
 
 }
 
-.addUser .addUserForm button:hover,
-.addUser .addUserForm button:focus {
+.addStudent .addStudentForm button:hover,
+.addStudent .addStudentForm button:focus {
   background-color: var(--primary-2);
   transition: 100ms ease-in-out;
 }
 
-.addUser .addUserForm button:focus {
+.addStudent .addStudentForm button:focus {
   outline: 2px solid black;
 }
 
-.addUser .addUserForm button:active {
+.addStudent .addStudentForm button:active {
   background-color: var(--primary);
 }

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast"
-
+import "./edit.css";
 
 const Edit = () => {
 
@@ -49,14 +49,16 @@ const Edit = () => {
     <div className="addStudent" onSubmit={submitForm}>
       <Link to="/studentInfo"> {"<-"}Back</Link >
       <h1>Update student</h1>
-      <form className="addstudentForm" >
-        <div className="inputGroup">
-          <label htmlFor="fname">First Name</label>
-          <input type="text" id="fname" value={student.fname} onChange={inputChangeHandler} name="fname" autoComplete="off" placeholder="Enter your First Name" />
-        </div>
-        <div className="inputGroup">
-          <label htmlFor="lname">Last Name</label>
-          <input type="text" id="lname" value={student.lname} onChange={inputChangeHandler} name="lname" autoComplete="off" placeholder="Enter your Last Name" />
+      <form className="addStudentForm" >
+        <div className="addStudentFormNames">
+          <div className="inputGroup">
+            <label htmlFor="fname">First Name</label>
+            <input type="text" id="fname" value={student.fname} onChange={inputChangeHandler} name="fname" autoComplete="off" placeholder="Enter your First Name" />
+          </div>
+          <div className="inputGroup">
+            <label htmlFor="lname">Last Name</label>
+            <input type="text" id="lname" value={student.lname} onChange={inputChangeHandler} name="lname" autoComplete="off" placeholder="Enter your Last Name" />
+          </div>
         </div>
         <div className="inputGroup">
           <label htmlFor="email">Email</label>
