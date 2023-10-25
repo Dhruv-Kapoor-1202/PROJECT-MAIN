@@ -46,7 +46,7 @@ const Student = () => {
             students.map((student, index) => {
               return (
                 <tr key={student._id}>
-                  <td>{index + 1}</td>
+                  <td align="center">{index + 1}</td>
                   <td>{student.fname} {student.lname}</td>
                   <td>{student.email}</td>
                   <td className="actionButtons">

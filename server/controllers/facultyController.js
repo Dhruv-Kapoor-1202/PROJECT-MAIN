@@ -1,4 +1,4 @@
-import Faculty from "../models/FacultyModel.js";
+import Faculty from "../models/Faculty/facultyModel.js";
 
 
 export const createFaculty = async (req, res) => {

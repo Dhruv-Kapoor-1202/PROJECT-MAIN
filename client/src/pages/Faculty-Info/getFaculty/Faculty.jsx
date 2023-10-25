@@ -46,7 +46,7 @@ const Faculty = () => {
             faculties.map((faculty, index) => {
               return (
                 <tr key={faculty._id}>
-                  <td>{index + 1}</td>
+                  <td align="center">{index + 1}</td>
                   <td>{faculty.fname} {faculty.lname}</td>
                   <td>{faculty.email}</td>
                   <td className="actionButtons">

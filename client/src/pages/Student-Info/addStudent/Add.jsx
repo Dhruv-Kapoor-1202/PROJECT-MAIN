@@ -39,13 +39,15 @@ const Add = () => {
       <Link to="/studentInfo"> {"<-"}Back</Link >
       <h1>Add New Student</h1>
       <form className="addUserForm" onSubmit={submitForm}>
-        <div className="inputGroup">
-          <label htmlFor="fname">First Name</label>
-          <input type="text" onChange={inputHandler} id="fname" name="fname" autoComplete="off" placeholder="Enter your First Name" />
-        </div>
-        <div className="inputGroup">
-          <label htmlFor="lname">Last Name</label>
-          <input type="text" onChange={inputHandler} id="lname" name="lname" autoComplete="off" placeholder="Enter your Last Name" />
+        <div className="addUserFormNames">
+          <div className="inputGroup">
+            <label htmlFor="fname">First Name</label>
+            <input type="text" onChange={inputHandler} id="fname" name="fname" autoComplete="off" placeholder="Enter your First Name" />
+          </div>
+          <div className="inputGroup">
+            <label htmlFor="lname">Last Name</label>
+            <input type="text" onChange={inputHandler} id="lname" name="lname" autoComplete="off" placeholder="Enter your Last Name" />
+          </div>
         </div>
         <div className="inputGroup">
           <label htmlFor="email">Email</label>
