@@ -6,7 +6,7 @@ const Sidebar = () => {
     <div className="sidebar box">
       <div className="sidebar_info box">
         <div className="sidebar-logo box"></div>
-        <div className="sidebar-name">Dhruv</div>
+        <div className="sidebar-name">ADMIN</div>
       </div>
       <div className="sidebar_nav box">
         <Link to="/">
