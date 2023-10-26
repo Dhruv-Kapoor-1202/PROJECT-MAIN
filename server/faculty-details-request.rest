@@ -1,0 +1,29 @@
+POST http://localhost:8000/api/addFacultyDetails
+Content-Type: application/json
+
+{
+  "employeeID": 1,
+  "fname" : "Vedant",
+  "lname" : "Kapoor",
+  "email" : "vk@gmail.com",
+  "phoneNumber" : 123123123,
+  "department" : "CSE",
+  "gender" : "male"
+}
+
+
+###
+GET http://localhost:8000/api/getOneFacultyDetails/65399231eb61766294e990a5
+
+
+### 
+PUT http://localhost:8000/api/updateOneFacultyDetails/65399231eb61766294e990a5
+Content-Type: application/json
+
+{
+  "fname" : "Random",
+  "email" : "pqrst@gmail.com"
+}
+
+###
+DELETE http://localhost:8000/api/deleteOneFacultyDetails/65399231eb61766294e990a5

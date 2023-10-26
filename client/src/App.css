@@ -34,11 +34,15 @@
 
 }
 
-.App>* {
+/* .App>* {
   flex: 1;
 
-  /* background-color: var(--off-white); */
+  
 
+}
+*/
+.Middle .Right {
+  flex: 1;
 }
 
 .App .Middle {
@@ -71,3 +75,21 @@
   flex: 1;
   width: 100%;
 }
+
+
+
+@media (max-width: 1200px) {
+  .App .Right {
+    display: none;
+  }
+
+  .Right>* {
+    display: none;
+  }
+}
+
+/* @media (min-width: 800px) {
+  .App {
+    position: absolute;
+  }
+} */

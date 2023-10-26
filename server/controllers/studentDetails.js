@@ -1,9 +1,9 @@
 import studentDetails from "../models/Student/studentDetails.js";
-import StudentDetails from "../models/Student/studentDetails.js";
+// import StudentDetails from "../models/Student/studentDetails.js";
 
 export const addStudentDetails = async (req, res) => {
   try {
-    const user = new StudentDetails(req.body);
+    const user = new studentDetails(req.body);
 
     if (!user) {
       return res.status(404).json({ message: "Student data not found" })
@@ -38,7 +38,7 @@ export const addStudentDetails = async (req, res) => {
 export const getOneStudentDetails = async (req, res) => {
   try {
     const id = req.params.id;
-    const dataPresent = await StudentDetails.findById(id);
+    const dataPresent = await studentDetails.findById(id);
 
     if (!dataPresent) {
       return res.status(404).json({ message: "Data Not Found" });
@@ -52,7 +52,7 @@ export const getOneStudentDetails = async (req, res) => {
 export const updateOneStudentDetails = async (req, res) => {
   try {
     const id = req.params.id;
-    const dataExists = await StudentDetails.findById(id);
+    const dataExists = await studentDetails.findById(id);
 
     if (!dataExists) {
       return res.status(404).json({ message: "Details Not Found" });
@@ -67,7 +67,7 @@ export const updateOneStudentDetails = async (req, res) => {
 export const deleteOneStudentDetails = async (req, res) => {
   try {
     const id = req.params.id;
-    const dataExists = await StudentDetails.findById(id);
+    const dataExists = await studentDetails.findById(id);
 
     if (!dataExists) {
       return res.status(404).json({ message: "Details Not Found" });

@@ -13,5 +13,18 @@
   /* height: 1em; */
   background-color: var(--primary);
 
+  padding: 1em;
+  height: 100%;
+}
 
+
+@media (max-width: 1000px) {
+  .topbar {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .topbar>* {
+    width: 100%;
+  }
 }

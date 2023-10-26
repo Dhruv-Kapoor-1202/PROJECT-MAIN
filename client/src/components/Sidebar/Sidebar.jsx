@@ -9,10 +9,26 @@ const Sidebar = () => {
         <div className="sidebar-name">Dhruv</div>
       </div>
       <div className="sidebar_nav box">
-        <Link to="/">Dashboard</Link>
-        <Link to="/calender">Calender</Link>
-        <Link to="/studentInfo">Student Info</Link>
-        <Link to="/facultyInfo">Faculty Info</Link>
+        <Link to="/">
+          <div className="sidebar-logo-2 box"></div>
+          <p>Dashboard</p>
+        </Link>
+        <Link to="/calender">
+          <div className="sidebar-logo-2 box"></div>
+          <p>Calender</p>
+        </Link>
+        <Link to="/studentInfo">
+          <div className="sidebar-logo-2 box"></div>
+          <p>Student Info</p>
+        </Link>
+        <Link to="/facultyInfo">
+          <div className="sidebar-logo-2 box"></div>
+          <p>Faculty Info</p>
+        </Link>
+        <Link to="/notices">
+          <div className="sidebar-logo-2 box"></div>
+          <p>Notices</p>
+        </Link>
       </div>
       <div className="box right-box"></div>
     </div>

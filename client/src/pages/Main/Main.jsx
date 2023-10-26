@@ -14,9 +14,9 @@ import EditFaculty from "../Faculty-Info/updateFaculty/Edit.jsx";
 // import { Calendar } from "antd";
 
 import Cal2 from "../Calender/Cal2.jsx";
-
-
 import Dash from "../Dash/Dash.jsx";
+
+import NoticeHome from "../Notices/NoticeHome.jsx";
 
 
 const Main = () => {
@@ -34,6 +34,8 @@ const Main = () => {
         <Route path="/facultyInfo" element={<Faculty />} />
         <Route path="/facultyInfo/add" element={<AddFaculty />} />
         <Route path="/facultyInfo/edit/:id" element={<EditFaculty />} />
+
+        <Route path="/notices" element={<NoticeHome />} />
 
       </Routes>
     </div>

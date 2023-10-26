@@ -1,0 +1,22 @@
+POST http://localhost:8000/api/addNotice 
+Content-Type: application/json
+
+{
+  "title" : "Notice 1",
+  "description" : "This is a notice"
+}
+
+###
+
+GET http://localhost:8000/api/getAllNotices
+
+###
+
+GET http://localhost:8000/api/getAllNoticeCount 
+
+###
+GET http://localhost:8000/api/getOneNotice/6539b2cf7a96d44b0649754d
+
+### 
+
+DELETE http://localhost:8000/api/deleteNotice/6539b2cf7a96d44b0649754d
