@@ -90,9 +90,6 @@ To run this project locally, follow these steps:
 
 Feel free to contribute to this project by creating issues, submitting pull requests, or adding new features.
 
-<!-- ## License
+## License
 
-This project is licensed under the [MIT License](LICENSE). -->
-
-<!-- 
-You can add this content to a file named `README.md` in the root directory of your project. Don't forget to replace placeholder information like the repository URL, contributors' names, and emails with the actual details specific to your project. Also, make sure to include a `LICENSE` file with the appropriate license text if you haven't already. -->
+This project is licensed under the [MIT License](LICENSE).
